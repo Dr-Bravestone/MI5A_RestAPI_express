@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json())
 
 // import routes
-const fakultasRoutes = require('./routes/fakultas')
+const fakultasRoutes = require('./routes/Fakultas')
 const prodiRoutes = require('./routes/Prodi')
 const dosenRoutes = require('./routes/Dosen')
 const mahasiswaRoutes = require('./routes/Mahasiswa')
