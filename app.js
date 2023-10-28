@@ -19,6 +19,7 @@ const fakultasRoutes = require('./routes/Fakultas')
 const prodiRoutes = require('./routes/Prodi')
 const dosenRoutes = require('./routes/Dosen')
 const mahasiswaRoutes = require('./routes/Mahasiswa')
+const authRoutes = require('./routes/Auth')
 
 
 // 8. put routes in express
@@ -26,6 +27,7 @@ app.use('/fakultas', fakultasRoutes)
 app.use('/prodi', prodiRoutes)
 app.use('/dosen', dosenRoutes)
 app.use('/mahasiswa', mahasiswaRoutes)
+app.use('/auth', authRoutes)
 
 // 3. connect to database
 mongoose.connect(process.env.DB_CONNECTION, {
